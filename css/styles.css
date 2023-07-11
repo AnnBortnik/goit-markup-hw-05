@@ -153,7 +153,8 @@ a {
     color: var(--white-color);
     max-width: 496px;
 }
-.hero-button {
+.hero-button,
+.modal-form-button {
     display: block;
     margin: auto;
     min-width: 169px;
@@ -362,7 +363,10 @@ a {
     color: var(--light-color);
     max-width: 264px;
 }
-.footer-social-title {
+.footer-socials {
+    margin-right: 80px;
+}
+.footer-title {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
@@ -381,6 +385,49 @@ a {
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--success-color);
+}
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-email {
+    border-radius: 4px;
+    border: 1px solid var(--white-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 264px;
+    height: 40px;
+    background-color: inherit;
+    margin-right: 24px;
+}
+.footer-email::placeholder {
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    padding: 8px 0 8px 16px;
+}
+.footer-form-button {
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: var(--primary-brand-color);
+    color: var(--white-color);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: var(--pressed-state-color);
+}
+.icon-subscribe {
+    fill: currentColor;
 }
 .buttons-container {
     display: flex;
@@ -498,6 +545,8 @@ a {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .modal-button {
     position: absolute;
@@ -528,4 +577,101 @@ a {
 }
 .modal-button:hover .close-icon {
     fill:var(--white-color);
+}
+.modal-title {
+    max-width: 360px;
+    color: var(--dark-brand-color);
+    font-size: 16px;   
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-top: 72px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.modal-form {
+}
+.row-form {
+    margin-bottom: 8px;
+}
+.modal-label {
+    color: var(--subtle-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    margin-bottom: 4px;
+}
+.modal-input-container {
+    position: relative;
+}
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding: 8px 38px;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.40);
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+}
+.modal-input:focus {
+    border-color: rgba(77, 90, 229, 1);
+}
+.modal-input:focus + .modal-icon{
+    fill: rgba(77, 90, 229, 1);
+}
+.modal-icon {
+    position: absolute;
+    fill: rgba(46, 47, 66, 0.40);
+    left: 16px;
+    bottom: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.comment-form {}
+.comment-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(142, 143, 153, 1);
+    margin-bottom: 4px;
+}
+.comment-text {
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    outline: transparent;
+    background-color: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment-text:focus {
+    border-color: rgba(77, 90, 229, 1);
+}
+.agreement {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.agreement-label {
+    color: var(--subtle-color);
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    font-weight: 400;
+}
+.privacy-link {
+    text-decoration: underline;
+    color: var(--primary-brand-color);
 }
