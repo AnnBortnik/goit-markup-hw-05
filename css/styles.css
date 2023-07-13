@@ -415,7 +415,6 @@ a {
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     border-radius: 4px;
     background: var(--primary-brand-color);
     color: var(--white-color);
@@ -432,6 +431,7 @@ a {
     background-color: var(--pressed-state-color);
 }
 .icon-subscribe {
+    margin-left: 16px;
     fill: currentColor;
 }
 .buttons-container {
